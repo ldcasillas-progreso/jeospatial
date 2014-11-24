@@ -21,7 +21,7 @@ import au.com.bytecode.opencsv.CSVReader;
  * @author <a href="mailto:jon.chambers@gmail.com">Jon Chambers</a>
  */
 public class ZipCode extends SimpleGeospatialPoint {
-    public static final String DEFAULT_DATA_FILE = "data/zips.csv";
+    public static final String DEFAULT_DATA_FILE = "src/example/resources/zips.csv";
     
     private final int code;
     private final String city;
@@ -90,7 +90,7 @@ public class ZipCode extends SimpleGeospatialPoint {
      *             the data file
      */
     public static List<ZipCode> loadAllFromCsvFile() throws IOException {
-        return ZipCode.loadAllFromCsvFile("data/zips.csv");
+        return ZipCode.loadAllFromCsvFile(DEFAULT_DATA_FILE);
     }
     
     /**

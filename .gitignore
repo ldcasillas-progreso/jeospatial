@@ -2,12 +2,11 @@
 .classpath
 .project
 .settings
+.idea
 bin
 *.jar
 *.zip
 *.gz
-build
-build-test
-build-example
-doc
-dist
+*.iml
+*~
+target
